@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        thead, tfoot {
+            background-color: rgb(38, 38, 38);
+            color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(38, 38, 38);
+        }
+        tbody > tr:nth-child(veen) {
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--ANATOMIA PARA TABELAS GRANDES
+        TABLE
+        CAPTION
+        THEAD
+        TR, TD, TH
+        TBODY
+        TR, TD, TH
+        TF00T
+        TR, TD, TH -->
+        <table>
+            <caption>População das Unidades Federativas</caption>
+            <thead>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </thead>
+            <tbody>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">21.168.791</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17.264,943</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">17.264,943</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">11.433,957</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td class="num">1.555.333,933</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td class="num">1.245.870,798</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso do Sul</td>
+                    <td class="num">357 145,534</td>
+                </tr>
+                <tr>
+                    <td>Goias</td>
+                    <td class="num">340 203,329</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="num">329 642,182</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">281 707,156</td>
+                </tr>
+                <tr>
+                    <td> Rio Grande do Norte</td>
+                    <td class="num">52 809,602</td>
+                </tr>
+                <tr><td>Distrito Federal<td class="num">5 760,783</td></td></tr>
+                <tr><td>Sergipe	<td class="num">21 925,424</td></td></tr>
+                <tr>
+                    <td>Espírito Santo</td>
+                    <td class="num">46 074,447</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>210.147,455</strong></td>
+            </tfoot>
+        </table>
+        <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio enim autem earum laborum fuga magni molestias debitis aliquid animi nostrum, quam non omnis dolorum culpa accusamus delectus ratione? Vero.</span><span>Quidem fugit pariatur eligendi quibusdam, earum et doloremque ipsam, ipsum quos nihil ipsa mollitia nemo quia ex, quae perspiciatis animi voluptatum? Sapiente tenetur earum voluptas veritatis, harum eligendi commodi amet?</span><span>At officia nemo tempore repudiandae ut aliquid inventore unde aperiam molestiae, minus sunt autem laudantium aspernatur earum amet dicta quaerat consequatur a, quae repellat, laborum sequi quisquam consectetur aut. Esse.</span><span>Eos eius reiciendis architecto expedita dolorem. Dolore aut, voluptatibus dolorem temporibus accusantium molestiae, voluptatum iure unde ex laudantium officia soluta fugiat fugit? Eum quia libero nisi quos facere voluptates quas!</span></p>
+        <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio enim autem earum laborum fuga magni molestias debitis aliquid animi nostrum, quam non omnis dolorum culpa accusamus delectus ratione? Vero.</span><span>Quidem fugit pariatur eligendi quibusdam, earum et doloremque ipsam, ipsum quos nihil ipsa mollitia nemo quia ex, quae perspiciatis animi voluptatum? Sapiente tenetur earum voluptas veritatis, harum eligendi commodi amet?</span><span>At officia nemo tempore repudiandae ut aliquid inventore unde aperiam molestiae, minus sunt autem laudantium aspernatur earum amet dicta quaerat consequatur a, quae repellat, laborum sequi quisquam consectetur aut. Esse.</span><span>Eos eius reiciendis architecto expedita dolorem. Dolore aut, voluptatibus dolorem temporibus accusantium molestiae, voluptatum iure unde ex laudantium officia soluta fugiat fugit? Eum quia libero nisi quos facere voluptates quas!</span></p>
+        <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio enim autem earum laborum fuga magni molestias debitis aliquid animi nostrum, quam non omnis dolorum culpa accusamus delectus ratione? Vero.</span><span>Quidem fugit pariatur eligendi quibusdam, earum et doloremque ipsam, ipsum quos nihil ipsa mollitia nemo quia ex, quae perspiciatis animi voluptatum? Sapiente tenetur earum voluptas veritatis, harum eligendi commodi amet?</span><span>At officia nemo tempore repudiandae ut aliquid inventore unde aperiam molestiae, minus sunt autem laudantium aspernatur earum amet dicta quaerat consequatur a, quae repellat, laborum sequi quisquam consectetur aut. Esse.</span><span>Eos eius reiciendis architecto expedita dolorem. Dolore aut, voluptatibus dolorem temporibus accusantium molestiae, voluptatum iure unde ex laudantium officia soluta fugiat fugit? Eum quia libero nisi quos facere voluptates quas!</span></p>
+        <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio enim autem earum laborum fuga magni molestias debitis aliquid animi nostrum, quam non omnis dolorum culpa accusamus delectus ratione? Vero.</span><span>Quidem fugit pariatur eligendi quibusdam, earum et doloremque ipsam, ipsum quos nihil ipsa mollitia nemo quia ex, quae perspiciatis animi voluptatum? Sapiente tenetur earum voluptas veritatis, harum eligendi commodi amet?</span><span>At officia nemo tempore repudiandae ut aliquid inventore unde aperiam molestiae, minus sunt autem laudantium aspernatur earum amet dicta quaerat consequatur a, quae repellat, laborum sequi quisquam consectetur aut. Esse.</span><span>Eos eius reiciendis architecto expedita dolorem. Dolore aut, voluptatibus dolorem temporibus accusantium molestiae, voluptatum iure unde ex laudantium officia soluta fugiat fugit? Eum quia libero nisi quos facere voluptates quas!</span></p>
+        <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio enim autem earum laborum fuga magni molestias debitis aliquid animi nostrum, quam non omnis dolorum culpa accusamus delectus ratione? Vero.</span><span>Quidem fugit pariatur eligendi quibusdam, earum et doloremque ipsam, ipsum quos nihil ipsa mollitia nemo quia ex, quae perspiciatis animi voluptatum? Sapiente tenetur earum voluptas veritatis, harum eligendi commodi amet?</span><span>At officia nemo tempore repudiandae ut aliquid inventore unde aperiam molestiae, minus sunt autem laudantium aspernatur earum amet dicta quaerat consequatur a, quae repellat, laborum sequi quisquam consectetur aut. Esse.</span><span>Eos eius reiciendis architecto expedita dolorem. Dolore aut, voluptatibus dolorem temporibus accusantium molestiae, voluptatum iure unde ex laudantium officia soluta fugiat fugit? Eum quia libero nisi quos facere voluptates quas!</span></p>
+        <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio enim autem earum laborum fuga magni molestias debitis aliquid animi nostrum, quam non omnis dolorum culpa accusamus delectus ratione? Vero.</span><span>Quidem fugit pariatur eligendi quibusdam, earum et doloremque ipsam, ipsum quos nihil ipsa mollitia nemo quia ex, quae perspiciatis animi voluptatum? Sapiente tenetur earum voluptas veritatis, harum eligendi commodi amet?</span><span>At officia nemo tempore repudiandae ut aliquid inventore unde aperiam molestiae, minus sunt autem laudantium aspernatur earum amet dicta quaerat consequatur a, quae repellat, laborum sequi quisquam consectetur aut. Esse.</span><span>Eos eius reiciendis architecto expedita dolorem. Dolore aut, voluptatibus dolorem temporibus accusantium molestiae, voluptatum iure unde ex laudantium officia soluta fugiat fugit? Eum quia libero nisi quos facere voluptates quas!</span></p>
+        <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio enim autem earum laborum fuga magni molestias debitis aliquid animi nostrum, quam non omnis dolorum culpa accusamus delectus ratione? Vero.</span><span>Quidem fugit pariatur eligendi quibusdam, earum et doloremque ipsam, ipsum quos nihil ipsa mollitia nemo quia ex, quae perspiciatis animi voluptatum? Sapiente tenetur earum voluptas veritatis, harum eligendi commodi amet?</span><span>At officia nemo tempore repudiandae ut aliquid inventore unde aperiam molestiae, minus sunt autem laudantium aspernatur earum amet dicta quaerat consequatur a, quae repellat, laborum sequi quisquam consectetur aut. Esse.</span><span>Eos eius reiciendis architecto expedita dolorem. Dolore aut, voluptatibus dolorem temporibus accusantium molestiae, voluptatum iure unde ex laudantium officia soluta fugiat fugit? Eum quia libero nisi quos facere voluptates quas!</span></p>
+        <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio enim autem earum laborum fuga magni molestias debitis aliquid animi nostrum, quam non omnis dolorum culpa accusamus delectus ratione? Vero.</span><span>Quidem fugit pariatur eligendi quibusdam, earum et doloremque ipsam, ipsum quos nihil ipsa mollitia nemo quia ex, quae perspiciatis animi voluptatum? Sapiente tenetur earum voluptas veritatis, harum eligendi commodi amet?</span><span>At officia nemo tempore repudiandae ut aliquid inventore unde aperiam molestiae, minus sunt autem laudantium aspernatur earum amet dicta quaerat consequatur a, quae repellat, laborum sequi quisquam consectetur aut. Esse.</span><span>Eos eius reiciendis architecto expedita dolorem. Dolore aut, voluptatibus dolorem temporibus accusantium molestiae, voluptatum iure unde ex laudantium officia soluta fugiat fugit? Eum quia libero nisi quos facere voluptates quas!</span></p>
+        <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio enim autem earum laborum fuga magni molestias debitis aliquid animi nostrum, quam non omnis dolorum culpa accusamus delectus ratione? Vero.</span><span>Quidem fugit pariatur eligendi quibusdam, earum et doloremque ipsam, ipsum quos nihil ipsa mollitia nemo quia ex, quae perspiciatis animi voluptatum? Sapiente tenetur earum voluptas veritatis, harum eligendi commodi amet?</span><span>At officia nemo tempore repudiandae ut aliquid inventore unde aperiam molestiae, minus sunt autem laudantium aspernatur earum amet dicta quaerat consequatur a, quae repellat, laborum sequi quisquam consectetur aut. Esse.</span><span>Eos eius reiciendis architecto expedita dolorem. Dolore aut, voluptatibus dolorem temporibus accusantium molestiae, voluptatum iure unde ex laudantium officia soluta fugiat fugit? Eum quia libero nisi quos facere voluptates quas!</span></p>
+</body>
+</html>
